@@ -17,7 +17,9 @@ to go along with me.
  
  ### About App
  
- This is the first all, its a basic app with contain basic scaffhol and Display ``` Hello, World ```.
+ This is the first app. 
+ 
+ Its a basic app with contain basic scaffold and Display ``` Hello, World ``` in center of body.
 
 
 For help getting started with Flutter development, view the
