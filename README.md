@@ -15,6 +15,23 @@ to go along with me.
  * [Vs code](https://code.visualstudio.com/)
  * [Android studio](https://developer.android.com/studio)
  
+## How to Use 
+
+```
+- Clone this repository:
+$ git clone -b FunFlutter https://github.com/Deepak391/Flutter
+
+- Enter in directory:
+$ cd Flutter
+
+- For install dependencies:
+$ flutter packages get
+
+- Run the app: 
+$ flutter run 
+
+```
+
  ### About App
  
  This is the Second app. 
