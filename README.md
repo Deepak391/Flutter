@@ -29,7 +29,6 @@ $ flutter packages get
 
 - Run the app: 
 $ flutter run 
-
 ```
 
  
