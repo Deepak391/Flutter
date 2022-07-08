@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'tipCalc.dart';
 import 'normalCalc.dart';
 void main() {
   runApp(MyApp());

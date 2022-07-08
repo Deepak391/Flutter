@@ -48,17 +48,17 @@ class _CalculatorState extends State<Calculator> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   SizedBox(
-                    height: 50,
+                    height: 20,
                   ),
                   Container(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       alignment: Alignment.centerLeft,
                       child: Text(
                         userInput,
                         style: TextStyle(fontSize: 20),
                       )),
                   Container(
-                      padding: EdgeInsets.all(20),
+                      padding: EdgeInsets.all(10),
                       alignment: Alignment.centerRight,
                       child: Text(finalOutput, style: TextStyle(fontSize: 20))),
                 ],
@@ -66,7 +66,7 @@ class _CalculatorState extends State<Calculator> {
             ),
           ),
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Container(
               child: GridView.builder(
                   itemCount: buttons.length,
