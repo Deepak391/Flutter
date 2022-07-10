@@ -33,7 +33,7 @@ $ flutter run
  
  ### About App
  
- This is the Fourth app.
+ This is the 4th app.
  
  It is a simple calculator with matrial UI
   * Good looking buttons 
