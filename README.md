@@ -34,7 +34,7 @@ $ flutter run
  
  ### About App
  
- This is the first app. 
+ This is the 1st app. 
  
  Its a basic app with contain basic scaffold and Display ``` Hello, World ``` in center of body.
 
