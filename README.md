@@ -1,15 +1,51 @@
-# demo
+# About The Project
 
-A new Flutter project.
+i am currently studing flutter and starting bulding flutter apps. 
+its my journy to get mastery in flutter. You can follow you all the code and app's 
+to go along with me. 
+#HappyCoding 
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+ **Prerequisites**
 
-A few resources to get you started if this is your first Flutter project:
+ These are the list of things you need to install these softwares.
+ 
+ * [Fultter](http://flutter.dev/)
+ * [Vs code](https://code.visualstudio.com/)
+ * [Android studio](https://developer.android.com/studio)
+ 
+ ## How to Use 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```
+- Clone this repository:
+$ git clone -b login-signup https://github.com/Deepak391/Flutter
+
+- Enter in directory:
+$ cd Flutter
+
+- For install dependencies:
+$ flutter packages get
+
+- Run the app: 
+$ flutter run 
+```
+ 
+ ### About App
+ 
+ This is the 5th app.
+ 
+ Its is a matrialstic UI Desgin for signup and signin.
+  
+ It contains lots of new things.  
+ 
+ ### Preview
+ 
+ ![Signin](https://i.imgur.com/Z3Xqr2N.png)
+ 
+ ![Signup](https://i.imgur.com/AOvfO9N.png)
+ 
+
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
