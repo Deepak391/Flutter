@@ -33,7 +33,7 @@ $ flutter run
 
  ### About App
  
- This is the Second app. 
+ This is the 2nd app. 
  
 Just for Fun add some new color, text style, and floating button.
 
