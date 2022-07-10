@@ -41,6 +41,10 @@ $ flutter run
   * sound effects and tap effects
  
  It contains lots of new things. 
+ 
+ ### Preview
+ 
+ ![image](https://i.imgur.com/lvgArtw.png)
 
 
 For help getting started with Flutter development, view the
