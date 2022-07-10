@@ -38,6 +38,10 @@ $ flutter run
  Basically its is a tip calculating app, with almost no bugs.
   
  It contains lots of new things. 
+ 
+ ### Preview
+ 
+ ![Image](https://i.imgur.com/RHE2qBB.png)
 
 
 For help getting started with Flutter development, view the
