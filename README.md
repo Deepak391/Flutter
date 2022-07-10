@@ -33,7 +33,7 @@ $ flutter run
  
  ### About App
  
- This is the third app.
+ This is the 3rd app.
  
  Basically its is a tip calculating app, with almost no bugs.
   
