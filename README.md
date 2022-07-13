@@ -19,7 +19,7 @@ to go along with me.
 
 ```
 - Clone this repository:
-$ git clone -b login-signup https://github.com/Deepak391/Flutter
+$ git clone -b quizapp https://github.com/Deepak391/Flutter
 
 - Enter in directory:
 $ cd Flutter
@@ -33,17 +33,17 @@ $ flutter run
  
  ### About App
  
- This is the 5th app.
+ This is the 6th app.
  
- Its is a matrialstic UI Desgin for signup and signin.
+ Its is a matrialstic quiz app.
   
  It contains lots of new things.  
  
  ### Preview
  
- ![Signin](https://i.imgur.com/Z3Xqr2N.png)
+ ![Signin](https://i.imgur.com/51FSWaQ.gif)
  
- ![Signup](https://i.imgur.com/AOvfO9N.png)
+
  
 
 
