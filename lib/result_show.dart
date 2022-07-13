@@ -8,9 +8,9 @@ void remarkcalc(int score) {
   
   if (score == 100) {
     remark = 'Outstanding';
-  } else if (score == 80) {
-    remark = 'Excellent';
   } else if (score == 90) {
+    remark = 'Excellent';
+  } else if (score == 80) {
     remark = 'Very Good';
   } else if (score == 70) {
     remark = 'Good';
