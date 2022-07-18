@@ -19,7 +19,7 @@ to go along with me.
 
 ```
 - Clone this repository:
-$ git clone -b quizapp https://github.com/Deepak391/Flutter
+$ git clone -b personalExpenses https://github.com/Deepak391/Flutter
 
 - Enter in directory:
 $ cd Flutter
@@ -33,15 +33,19 @@ $ flutter run
  
  ### About App
  
- This is the 6th app.
+ This is the 7th app.
  
- Its is a matrialstic quiz app.
+ Its is a matrialstic Personal Expenses app.
+
+ * Add new Transactions
+ * Graph view 
+ * Delete transactions
   
  It contains lots of new things.  
  
  ### Preview
  
- ![Signin](https://i.imgur.com/51FSWaQ.gif)
+ ![Signin](https://i.imgur.com/CCWUMY7.gifv)
  
 
  
