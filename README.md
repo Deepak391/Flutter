@@ -45,7 +45,7 @@ $ flutter run
  
  ### Preview
  
- ![Signin](https://i.imgur.com/hOikkOn.gif)
+ [click](https://i.imgur.com/hOikkOn.gif)
  
 
  
