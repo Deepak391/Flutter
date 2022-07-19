@@ -33,19 +33,19 @@ $ flutter run
  
  ### About App
  
- This is the 7th app.
+ This is the 8th app.
  
- Its is a matrialstic Personal Expenses app.
+ Its is a matrialstic Meal app.
 
- * Add new Transactions
- * Graph view 
- * Delete transactions
+ * view Meal and recipe
+ * add to favorites 
+ * set filters
   
  It contains lots of new things.  
  
  ### Preview
  
- ![Signin](https://i.imgur.com/CCWUMY7.gifv)
+ ![Signin](https://i.imgur.com/hOikkOn.gif)
  
 
  
