@@ -1,4 +1,6 @@
 import 'package:demo/providers/cart.dart';
+import 'package:demo/screens/cart_screen.dart';
+import 'package:demo/widgets/app_drawer.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/products_grid.dart';
@@ -51,13 +53,16 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
                 icon: Icon(
                   Icons.shopping_cart,
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(CartScreen.routeName);
+                },
               ),
               value: cart.itemCount.toString(),
             ),
           ),
         ],
       ),
+      drawer: AppDrawer(),
       body: ProductsGrid(_showOnlyFavorites),
     );
   }
