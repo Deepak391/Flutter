@@ -1,11 +1,12 @@
-import 'package:demo/providers/cart.dart';
-import 'package:demo/screens/cart_screen.dart';
-import 'package:demo/widgets/app_drawer.dart';
-import 'package:provider/provider.dart';
-
+import '../providers/cart.dart';
+import '../screens/cart_screen.dart';
+import '../widgets/app_drawer.dart';
 import '../widgets/products_grid.dart';
-import 'package:flutter/material.dart';
 import '../widgets/badge.dart';
+import '../providers/products.dart';
+
+import 'package:provider/provider.dart';
+import 'package:flutter/material.dart';
 
 enum FilterOptions {
   Favorites,
@@ -19,6 +20,22 @@ class ProductsOverviewScreen extends StatefulWidget {
 
 class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
   var _showOnlyFavorites = false;
+  var _isLoading = false;
+
+  @override
+  void initState() {
+    setState(() {
+      _isLoading = true;
+    });
+    Provider.of<Products>(context, listen: false)
+        .fetchAndSetProducts()
+        .then((_) {
+      setState(() {
+        _isLoading = false;
+      });
+    });
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +80,11 @@ class _ProductsOverviewScreenState extends State<ProductsOverviewScreen> {
         ],
       ),
       drawer: AppDrawer(),
-      body: ProductsGrid(_showOnlyFavorites),
+      body: _isLoading
+          ? Center(
+              child: CircularProgressIndicator(),
+            )
+          : ProductsGrid(_showOnlyFavorites),
     );
   }
 }
