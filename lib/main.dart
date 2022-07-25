@@ -1,16 +1,12 @@
+import 'package:demo/screens/auth_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import './screens/chat_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-import './providers/cart.dart';
-import './providers/orders.dart';
-import './screens/cart_screen.dart';
-import './screens/products_overview_screen.dart';
-import './screens/product_detail_screen.dart';
-import './providers/products.dart';
-import './screens/orders_screen.dart';
-import './screens/use_products_screen.dart';
-import './screens/edit_product_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -19,36 +15,20 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-          create: (context) => Products(),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => Cart(),
-        ),
-        ChangeNotifierProvider(
-          create: (context) => Orders(),
-        )
-      ],
-      child: MaterialApp(
-        debugShowCheckedModeBanner: false,
-        title: 'MyShop',
-        theme: ThemeData(
-          primaryColor: Colors.blue,
-          colorScheme:
-              ColorScheme.fromSwatch().copyWith(secondary: Colors.blue),
-          //textTheme: GoogleFonts.latoTextTheme(Theme.of(context).textTheme),
-        ),
-        home: ProductsOverviewScreen(),
-        routes: {
-          ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
-          CartScreen.routeName: (ctx) => CartScreen(),
-          OrdersScreen.routeName: (ctx) => OrdersScreen(),
-          UserProductsScreen.routeName: (ctx) => UserProductsScreen(),
-          EditProductScreen.routeName: (ctx) => EditProductScreen(),
-        },
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Flutter Chat',
+      theme: ThemeData(
+        primarySwatch: Colors.grey,
       ),
+      home: StreamBuilder(
+          stream: FirebaseAuth.instance.authStateChanges(),
+          builder: (ctx, userSnapshot) {
+            if (userSnapshot.hasData) {
+              return ChatScreen();
+            }
+            return AuthScreen();
+          }),
     );
   }
 }
