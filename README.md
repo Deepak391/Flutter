@@ -55,7 +55,7 @@ $ flutter run
  
  ### Preview
  
- ![Signin](https://drive.google.com/file/d/1TI9wgiVQDWpp7KpEIi7pACp6sW8Kr9ME/view)
+ [Watch the Video](https://drive.google.com/file/d/1TI9wgiVQDWpp7KpEIi7pACp6sW8Kr9ME/preview)
  
 
 For help getting started with Flutter development, view the
